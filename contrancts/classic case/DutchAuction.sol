@@ -2,6 +2,7 @@
 pragma solidity ^ 0.8.17;
 //荷兰拍卖合约：荷兰拍卖是指随着时间的流逝 郁金香的成色变差 因此价格贬低，所以第一个举牌人就是竞拍成功的人
 //调用ERC721 中交易方法
+//必须部署erc721合约 并且将拍卖地址授权
 interface IERC721{
   function transferfrom(address from,address to,uint256 tokenId)external;
 }
